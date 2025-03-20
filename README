@@ -1,0 +1,124 @@
+# Chinese Flashcard App
+
+A web-based application for learning Chinese characters through interactive flashcards.
+
+## Features
+
+- Interactive flashcards with Chinese characters, pinyin, and English translations
+- Study mode filtering (all cards, known cards, unknown cards)
+- Progress tracking with "Mark as Known" functionality
+- Option to show/hide pinyin for increased difficulty
+- Add custom flashcards with Chinese characters, pinyin, and English translations
+- Simple and intuitive navigation between cards
+- Responsive design that works on desktop and mobile devices
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14.0 or higher recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/chinese-flashcard-app.git
+   cd chinese-flashcard-app
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+   or with yarn:
+   ```
+   yarn install
+   ```
+
+3. Start the development server:
+   ```
+   npm start
+   ```
+   or with yarn:
+   ```
+   yarn start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Usage
+
+### Studying Cards
+- Click on a card to flip between Chinese and English
+- Use the "Next" and "Previous" buttons to navigate between cards
+- Toggle "Mark as Known" to track your progress
+- Use the dropdown menu to filter cards (All Cards, Known Cards, Unknown Cards)
+- Toggle "Show Pinyin" checkbox to show or hide pronunciation guidance
+
+### Adding New Cards
+1. Click the "+ Add Card" button in the header
+2. Enter the Chinese character(s), pinyin, and English translation
+3. Click "Add Card" to save the new flashcard
+
+## Project Structure
+
+```
+chinese-flashcard-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── ChineseFlashcardApp.jsx    # Main application component
+│   ├── App.js
+│   ├── index.js
+│   └── styles.css
+├── package.json
+└── README.md
+```
+
+## Customization
+
+### Adding Default Flashcards
+
+To modify the default flashcard set, edit the `cards` array in `ChineseFlashcardApp.jsx`:
+
+```javascript
+const [cards, setCards] = useState([
+  { id: 1, chinese: '你好', pinyin: 'nǐ hǎo', english: 'hello', known: false },
+  { id: 2, chinese: '谢谢', pinyin: 'xiè xiè', english: 'thank you', known: false },
+  // Add more cards here
+]);
+```
+
+### Styling
+
+The application uses Tailwind CSS classes for styling. To modify the appearance, edit the class names in the component.
+
+## Future Enhancements
+
+- User accounts to save progress
+- Spaced repetition algorithm
+- Card categories/decks
+- Export/import flashcard sets
+- Audio pronunciation
+- Handwriting practice
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Tailwind CSS for the styling framework
+- React for the frontend framework
+- All contributors who help improve this application
